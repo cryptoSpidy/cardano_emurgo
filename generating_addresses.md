@@ -10,7 +10,7 @@ cardano-cli stake-address key-gen --verification-key-file=addr1.staking.vk.json 
 ```
 ## Create Shelley Base Address for Testnet
 ```bash
-cardano-cli address build ${CARDANO_TESTNET} --payment-verification-key-file=addr1.payment.vk.json --stake-verification-key-file=addr1.staking.vk.json --out-file=addr1.addr1.shelley
+cardano-cli address build ${CARDANO_TESTNET} --payment-verification-key-file=addr1.payment.vk.json --stake-verification-key-file=addr1.staking.vk.json --out-file=addr1.base.shelley
 ```
 ## List UTXOs of a Shelley Base Address for Testnet
 ```bash

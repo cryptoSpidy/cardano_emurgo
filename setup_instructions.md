@@ -134,4 +134,8 @@ Append these bash-completion commands to your `~/.bashrc` file.
 source <(cardano-node --bash-completion-script `which cardano-node`)
 source <(cardano-cli  --bash-completion-script `which cardano-cli`)
 ```
+Also an alias can be added to run node easily
+```
+alias runCnode='cardano-node run --topology="${CARDANO_CONFIG}/testnet-topology.json" --database-path="${CARDANO_DB_TESTNET}" --socket-path="${CARDANO_NODE_SOCKET_PATH}" --port=3001 --config="${CARDANO_CONFIG}/testnet-config.json"'
+```
 Logout and login again.  

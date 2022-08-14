@@ -22,6 +22,19 @@ sudo apt-get install automake build-essential curl pkg-config libffi-dev libgmp-
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
+Verify that ~/.local/bin is in your PATH:
+```
+echo $PATH
+```
+If ~/.local/bin is not in the PATH, you need to add the following line to your .bashrc file
+```
+export PATH="~/.local/bin:$PATH"
+```
+and source the file:
+```
+source .bashrc
+```
+
 ## Setup GHC and Cabal (a version is installed by default, check and change if required)
 ```bash
 ghcup install ghc 8.10.7

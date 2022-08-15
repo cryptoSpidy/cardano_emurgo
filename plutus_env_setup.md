@@ -1,26 +1,33 @@
-I CREATE VM (recommended minimun: 2cpus, 6GB of RAM, 64GB of storage)
-With Ubuntu 20.10 installed (that's the one I tested)
+
+## With Ubuntu installed
+
 Execute:
-1. sudo apt-get update
-2. sudo apt-get upgrade
-3. sudo apt-get install snap git nano curl
-4. sudo adduser anyNameYouLike (optional)
-4.1. sudo usermod -aG sudo anyNameYouLike (optional)
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install snap git nano curl
+sudo adduser anyNameYouLike (optional)
+sudo usermod -aG sudo anyNameYouLike (optional)
+```
 Creating a different user with sudo capabilities is an optional step, recommended for
 security in production environments.
 Close session and enter with the new created user
-II NIX
-Install Nix
+
+## Install Nix
 Execute
-5. curl -L https://nixos.org/nix/install > install-nix.sh
-6. chmod +x install-nix.sh
-7. ./install-nix.sh
+```bash
+curl -L https://nixos.org/nix/install > install-nix.sh
+chmod +x install-nix.sh
+./install-nix.sh
+```
 Log Off user and LogIn again.
 Open a terminal and verify installations
 Execute
-8. nix --version
-9. git --version
-10. nano --version
+```bash
+nix --version
+git --version
+nano --version
+```
 III IOHK Binary Cache (necessary for saving hours of time in the Plutus Libraries installation)
 Execute
 11. sudo mkdir -p /etc/nix

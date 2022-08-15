@@ -43,7 +43,7 @@ substituters = https://hydra.iohk.io https://iohk.cachix.org https://cache.nixos
 trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7Rqoo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
 ```
 (Reference: You can Save with Ctrl-O and close the file with Ctrl-X)
-## PLUTUS-APPLICATION-FRAMEWORK
+# PLUTUS-APPLICATION-FRAMEWORK
 Clone the Plutus-Apps repository
 Execute
 ```bash
@@ -57,7 +57,7 @@ git checkout 6aff97d596ac9d59460aab5c65627b1c8c0a1528 (for running our examples)
 nix-shell (Takes a while the first time)
 ```
 
-# PLUTUS-APPLICATION-FRAMEWORK
+## PLUTUS-APPLICATION-FRAMEWORK
 Execute
 ```bash
 cd plutus-apps
@@ -73,12 +73,14 @@ plutus-playground-server
 ```
 Takes a while and ends with:
 Interpreter ready
+
 Open a new terminal (on the GUI or a new SSH connection if no gui)
+
 Change into the plutus-apps and open nix:
 Execute
 ```bash
-21. cd plutus-apps
-22. nix-shell
+cd plutus-apps
+nix-shell
 ```
 Change into plutus-playground-client folder, update and start
 ```bash
